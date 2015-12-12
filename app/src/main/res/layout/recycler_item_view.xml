@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_list"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Brand"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="model"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|right"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="model"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
